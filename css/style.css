@@ -51,7 +51,7 @@ nav a:hover
     color: black;
 }
 
-.intro-header 
+#intro-header 
 {
     width: 100vw;
     height: 80vh;
@@ -62,7 +62,7 @@ nav a:hover
     grid-area: header;
 }
 
-.about-header 
+#about-header 
 {
     width: 100vw;
     height: 200vh;
@@ -71,6 +71,29 @@ nav a:hover
     transform: translateY(7rem);
     align-items: center;
     grid-area: header;
+}
+
+#booking-header
+{
+
+}
+
+#image-track
+{
+    display: flex;
+    gap: 4vmin;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+#image-track > .image
+{
+    width: 40vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: 100% 50%;
 }
 
 header p 
@@ -89,7 +112,7 @@ section
     grid-area: section;
 }
 
-h1 
+h1
 {
     font-size: 3.5rem;
     
@@ -216,4 +239,9 @@ p
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: normal;
+}
+
+.prevent-selection
+{
+    user-select: none;
 }
